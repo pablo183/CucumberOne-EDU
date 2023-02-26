@@ -1,13 +1,10 @@
-package stepDefinations;
+package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import java.text.ParseException;
-
-public class Steps {
+public class StepsApplicationLogin {
 
     @Given("User on NetBanking loading page")
     public void user_on_net_banking_loading_page() {
@@ -29,16 +26,16 @@ public class Steps {
 
     @When("User login into application with username and password")
     public void user_login_into_application_with_username_and_password() {
-        System.out.println("nLogged in sucess");
+        System.out.println("nLogged in success");
     }
 
     @Then("Home page is populated")
     public void home_page_is_populated() {
-        System.out.println("Valdiating home page");
+        System.out.println("Validating home page");
     }
     @Then("Cards displayed are {string}")
     public void cards_displayed_are(String string) {
-        System.out.println("Valdiating cards");
+        System.out.println("Validating cards");
     }
 
     @When("^User login into application with (.+) and password (.+)$")

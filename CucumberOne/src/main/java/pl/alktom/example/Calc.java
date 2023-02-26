@@ -1,7 +1,10 @@
-package org.example;
+package pl.alktom.example;
 
 public class Calc {
     public int sum(int a, int b) {
         return a + b;
     }
 }
+
+
+

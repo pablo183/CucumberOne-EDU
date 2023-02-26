@@ -1,7 +1,5 @@
 Feature: Application Login
 
-
-
   @RegTest
   Scenario: Home page default login
     Given User on NetBanking loading page
@@ -12,7 +10,7 @@ Feature: Application Login
   @MobileTest
   Scenario: Home page default login
     Given User on NetBanking loading page
-    When User login into application with "asna" and password "4433"
+    When User login into application with "asia" and password "4433"
     Then Home page is populated
     And Cards displayed are "false"
 
@@ -24,7 +22,7 @@ Feature: Application Login
     And Cards displayed are "true"
 
     Examples:
-    |Username|password|
+    |Username|password |
     |user1    |pass1   |
     |user2    |pass2   |
     |user3    |pass3   |
